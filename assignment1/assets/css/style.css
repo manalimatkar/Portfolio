@@ -64,8 +64,8 @@ section{
 }
 .imglist
 {
-    width: 80%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     margin: 0px auto;
 }
 h1, h2, h3, h4{
@@ -146,8 +146,7 @@ footer{
 /*Image Grid For Portfolio*/
 .img_grid{
     width: 100%;
-    float: left;
-    margin-left: 50px;
+    text-align: center;
 }
 .containerBox {
     display: inline-block;
@@ -225,18 +224,46 @@ textarea{
     font-size: 16px;
 }
 /* Media Queries Added*/
+@media only screen and (max-width: 1139px){
+    .container {
+        width: 100%;
+        margin-left: 60px;
+    }
+    #main-bio{
+        width: 66%;
+    }
+    #contact-info{
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 1079px){
+    .container {
+        width: 100%;
+        margin-left: 60px;
+    }
+    #main-bio{
+        width: 58%;
+    }
+    #contact-info{
+        width: 30%;
+    }
+}
 @media only screen and (max-width: 980px) {
     nav{
-        width: 90%;
+        width: 100%;
     }
     .container {
         width: 90%;
-        margin-left: 70px;
+        margin-left: 40px;
     }
     #main-bio{
         width: 55%;
         margin-left: 20px;
         margin-right: 40px;
+    }
+    #contact-info{
+        width: 34%;
     }
     #bio-image{
         width: 90%;
@@ -247,18 +274,45 @@ textarea{
         margin-left: 20px;
         margin-top: 20px;
     }
-    .img_grid {
+    /*.img_grid {
     width: 100%;
     float: left;
     margin-left: 100px;
-    }
+    }*/
     .contactForm{
         margin-left: 5px;
     }
+    textarea{
+        width: 80%;
+    }
+    input {
+        width: 80%
+    }
+}
+@media only screen and (max-width: 872px)
+{
+    .container{
+        width: 95%;
+    }
+     #main-bio{
+        width: 50%;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    #contact-info{
+        width: 36%;
+    }
+    textarea{
+        width: 80%;
+    }
+    input {
+        width: 80%
+    }
+
 }
 @media only screen and (max-width: 768px) {
     nav{
-        width: 90%;
+        width: 95%;
     }
     .container {
         width: 95%;
@@ -283,19 +337,19 @@ textarea{
         margin-left: 20px;
         margin-top: 20px;
     }
-    .img_grid {
+   /* .img_grid {
         width: 100%;
         float: left;
         margin-left: 30px;
-    }
+    }*/
     .imglist {
-        width: 80%;
-        text-align: left;
-        margin: 0px auto;
-        margin-left: 10px;
+        width: 100%;
     }
-    input, textarea{
-        width: 480px;
+    textarea{
+        width: 80%;
+    }
+    input {
+        width: 80%
     }
 }
 @media only screen and (max-width: 640px) {
@@ -324,12 +378,15 @@ textarea{
         margin-left: 20px;
         margin-top: 20px;
     }
-    .img_grid {
+   /* .img_grid {
     width: 80%;
     float: left;
     margin-left: 100px;
+    }*/
+    textarea{
+        width: 80%;
     }
-    input, textarea{
-        width: 380px;
+    input {
+        width: 80%
     }
 }
